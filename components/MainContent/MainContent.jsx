@@ -3,6 +3,9 @@ import Image from "next/image";
 import bannerOne from "../../public/images/img1.jpg";
 import imgTwo from "../../public/images/img2.jpeg";
 import { GreenBtn } from "../Buttons";
+import galleryImages from "../../data/galleryImages";
+import { BsPatchCheckFill, BsFillFilePersonFill } from "react-icons/bs";
+import { ImLocation2 } from "react-icons/im";
 
 const MainContent = () => {
   return (
@@ -100,15 +103,63 @@ const MainContent = () => {
           Bali.
         </p>
 
-        <div class="grid grid-cols-4 gap-4">
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
-          <div className="bg-midBlue rounded">01</div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+          {galleryImages.map((image, index) => (
+            <Image
+              key={index}
+              src={image}
+              alt={`image-galery-${index + 1}`}
+              priority
+              className="xl:h-72 md:h-64 rounded shadow-lg cursor-pointer duration-100 hover:lg:border-4"
+            />
+          ))}
         </div>
+      </section>
+
+      <section className="container mt-12 flex flex-col gap-4 px-0">
+        <h1>Benefits</h1>
+        <p>
+          Selain crew yang sudah berpengalaman dan harga yang kompetitif,
+          berikut kelebihan kami dibandingkan dengan watersports lainnya:
+        </p>
+
+        <div className="grid grid-cols-3 gap-8">
+          <div className="bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
+            <BsPatchCheckFill className="text-5xl" />
+            <h2>Aman</h2>
+            <p>
+              Anda dilengkapi dengan pelampung, goggle dan sepatu. Crew kami
+              menggunakan jetski khusus akan mendampingi anda selama touring
+              jetski atau watersports lainnya.
+            </p>
+          </div>
+          <div className="bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
+            <BsFillFilePersonFill className="text-5xl" />
+            <h2>Personal</h2>
+            <p>
+              Anda bisa melakukan permintaan khusus untuk bermain watersports di
+              area lain di Bali atau menentukan rute jetski sesuai keinginan
+              Anda.
+            </p>
+          </div>
+          <div className=" bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
+            <ImLocation2 className="text-5xl" />
+            <h2>Lokasi Terbaik</h2>
+            <p>
+              Terletak di pantai Mertasari, Sanur, memberikan keuntungan kepada
+              Anda selama bermain watersports dengan lebih nyaman karena tidak
+              seramai lalu lintas air di Tanjung Benoa.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="container mt-12 flex flex-col gap-4 px-0">
+        <h1>Testimony</h1>
+        <p>
+          Apa kata mereka yang sudah mengikuti Jetski adventure bersama kami?
+          <i>(by Google Review)</i>
+        </p>
       </section>
     </main>
   );
