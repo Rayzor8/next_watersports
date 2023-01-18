@@ -2,12 +2,28 @@ import React from "react";
 import Image from "next/image";
 import bannerOne from "../../public/images/img1.jpg";
 import imgTwo from "../../public/images/img2.jpeg";
-import { GreenBtn } from "../Buttons";
+import { GreenBtn } from "../../ui/Buttons";
 import galleryImages from "../../data/galleryImages";
-import { BsPatchCheckFill, BsFillFilePersonFill } from "react-icons/bs";
-import { ImLocation2 } from "react-icons/im";
+import {
+  bannerData,
+  aboutData,
+  infoData,
+  galleryData,
+  benefitsData,
+} from "../../data/contentData";
 
 const MainContent = () => {
+  
+  const RenderParagraph = ({ parags }) => {
+    return (
+      <>
+        {parags.map((p, idx) => (
+          <p key={idx}>{p}</p>
+        ))}
+      </>
+    );
+  };
+
   return (
     <main className="min-h-screen  py-8 bg-red-400 bg-sky-100">
       <section className="container grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -21,45 +37,23 @@ const MainContent = () => {
           />
         </div>
         <div className="flex justify-center items-start flex-col gap-4">
-          <h1>Rayzor Watersports</h1>
-          <h2>
-            Rental Jetski Dan Berbagai Permainan Watersports Berpengalaman Di
-            Bali.
-          </h2>
-          <p>
-            Jetski adventure adalah permainan terfavorit kami karena Anda bisa
-            mengendarai jetski sendiri dan mengikuti tur keliling menikmati
-            keindahan Pulau Bali dari laut dipandu dengan crew kami yang sudah
-            berpengalaman.
-          </p>
-          <p>
-            Permainan unik lainnya adalah JETSURF, papan selancar bermesin yang
-            bisa buat Anda berselancar dengan lebih mudah. Dan masih banyak
-            permainan lainnya.
-          </p>
+          <h1>{bannerData.headOne}</h1>
+          <h2>{bannerData.headTwo}</h2>
+
+          {bannerData.parags.map((p, idx) => (
+            <p key={idx}>{p}</p>
+          ))}
+
+          <RenderParagraph parags={bannerData.parags} />
 
           <GreenBtn>Contact Us</GreenBtn>
         </div>
       </section>
 
       <section className="container mt-12 flex flex-col gap-4 gradient">
-        <h1>About Us</h1>
-        <p>
-          Rayzor Watersports merupakan perusahaan tempat berbagai macam
-          permainan air seperti Jetski, JETSURF, Fly Board, Wake Board, Banana
-          boat, Kayak, SUP dan lain-lain di Bali. Lokasi kami lebih “private”
-          tepatnya berada di pantai Mertasari, tentunya area bermain watersports
-          lebih luas dan lebih nyaman.
-        </p>
+        <h1>{aboutData.headOne}</h1>
 
-        <p>
-          Selain itu, kami melayani permintaan khusus jika Anda menginginkan
-          bermain watersports di area lain di Bali seperti danau Batur, pantai
-          Kuta, Nusa Lembongan dan area lainnya sesuai dengan kelayakan dan
-          keamanan di lokasi. Kami memiliki crew yang ramah dan profesional siap
-          menemani Anda mendapatkan pengalaman watersports yang seru selama
-          liburan Anda di Pulau Bali.{" "}
-        </p>
+        <RenderParagraph parags={aboutData.parags} />
       </section>
 
       <section className="container grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
@@ -73,35 +67,15 @@ const MainContent = () => {
         </div>
 
         <div className="flex justify-center items-start flex-col gap-4">
-          <h2>
-            Apakah permainan watersports kami aman untuk pemula dan anak-anak ?
-          </h2>
+          <h2>{infoData.head}</h2>
 
-          <p>
-            Semua permainan kami aman untuk anak-anak minimal usia 5 tahun
-            selama orang tua mengijinkan, mendampingi dan mengikuti instruksi
-            keamanan yang disampaikan oleh crew selama bermain watersports.{" "}
-          </p>
-
-          <p>
-            Sebelum bermain, crew kami yang berpengalaman akan memberikan
-            instruksi kemanan, membimbing cara bermain dan mengawasi selama
-            bermain. Selain itu, Anda akan kami lengkapi dengan pelampung
-            berstandar Internasional. Jadi untuk pemula maupun anak-anak tetap
-            bisa bersenang-senang bermain watersports.{" "}
-          </p>
+          <RenderParagraph parags={infoData.parags} />
         </div>
       </section>
 
       <section className="container mt-12 flex flex-col gap-4 gradient">
-        <h1>Galerry</h1>
-        <p>
-          Berikut foto keseruan mengendarai jetski menyusuri pantai-pantai yang
-          indah di Pulau Bali. Berencana liburan di Bali?{" "}
-          <b>Yuk seru-seruan bareng keluarga dan teman-teman!</b> Hubungi kami
-          sekarang juga untuk menikmati berbagai macam permainan watersports di
-          Bali.
-        </p>
+        <h1>{galleryData.head}</h1>
+        <p>{galleryData.parags}</p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
           {galleryImages.map((image, index) => (
@@ -116,41 +90,21 @@ const MainContent = () => {
         </div>
       </section>
 
-      <section className="container mt-12 flex flex-col gap-4 px-0">
-        <h1>Benefits</h1>
-        <p>
-          Selain crew yang sudah berpengalaman dan harga yang kompetitif,
-          berikut kelebihan kami dibandingkan dengan watersports lainnya:
-        </p>
+      <section className="container mt-12 flex flex-col gap-4 xl:px-0">
+        <h1>{benefitsData.head}</h1>
+        <p>{benefitsData.pHead}</p>
 
-        <div className="grid grid-cols-3 gap-8">
-          <div className="bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
-            <BsPatchCheckFill className="text-5xl" />
-            <h2>Aman</h2>
-            <p>
-              Anda dilengkapi dengan pelampung, goggle dan sepatu. Crew kami
-              menggunakan jetski khusus akan mendampingi anda selama touring
-              jetski atau watersports lainnya.
-            </p>
-          </div>
-          <div className="bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
-            <BsFillFilePersonFill className="text-5xl" />
-            <h2>Personal</h2>
-            <p>
-              Anda bisa melakukan permintaan khusus untuk bermain watersports di
-              area lain di Bali atau menentukan rute jetski sesuai keinginan
-              Anda.
-            </p>
-          </div>
-          <div className=" bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12">
-            <ImLocation2 className="text-5xl" />
-            <h2>Lokasi Terbaik</h2>
-            <p>
-              Terletak di pantai Mertasari, Sanur, memberikan keuntungan kepada
-              Anda selama bermain watersports dengan lebih nyaman karena tidak
-              seramai lalu lintas air di Tanjung Benoa.
-            </p>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {benefitsData.cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white rounded flex justify-center items-center flex-col gap-4 text-midBlue text-center p-12"
+            >
+              {card.icon}
+              <h2>{card.head}</h2>
+              <p>{card.parag}</p>
+            </div>
+          ))}
         </div>
       </section>
 
