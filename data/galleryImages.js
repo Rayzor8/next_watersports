@@ -9,15 +9,15 @@ import gallery8 from "../public/images/gallery-8.jpg";
 import gallery9 from "../public/images/gallery-9.jpg";
 
 const galleryImages = [
-  gallery1,
-  gallery2,
-  gallery3,
-  gallery4,
-  gallery5,
-  gallery6,
-  gallery7,
-  gallery8,
-  gallery9,
+  { img: gallery1, loc: "Sanur - Candidasa Jimbaran" },
+  { img: gallery2, loc: "Sanur - Candidasa Jimbaran" },
+  { img: gallery3, loc: "Sanur - Nusa Penida" },
+  { img: gallery4, loc: "Sanur - Nusa Penida" },
+  { img: gallery5, loc: "Sanur - Uluwatu" },
+  { img: gallery6, loc: "Sanur - Uluwatu" },
+  { img: gallery7, loc: "Sanur - Uluwatu" },
+  { img: gallery8, loc: "Sanur - Mangrove" },
+  { img: gallery9, loc: "Sanur - Mangrove" },
 ];
 
 export default galleryImages;

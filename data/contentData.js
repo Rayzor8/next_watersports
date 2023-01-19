@@ -1,5 +1,14 @@
 import { BsPatchCheckFill, BsFillFilePersonFill } from "react-icons/bs";
 import { ImLocation2 } from "react-icons/im";
+import pricingOne from "../public/images/pricing-1.jpg";
+import pricingTwo from "../public/images/pricing-2.jpg";
+import pricingThree from "../public/images/pricing-3.jpg";
+import pricingFour from "../public/images/pricing-4.jpg";
+import testimonyOne from "../public/images/testimony-1.jpg";
+import testimonyTwo from "../public/images/testimony-2.jpg";
+import testimonyThree from "../public/images/testimony-3.jpg";
+import testimonyFour from "../public/images/testimony-4.jpg";
+import testimonyFive from "../public/images/testimony-5.jpg";
 
 export const bannerData = {
   headOne: "Rayzor Watersports",
@@ -46,19 +55,92 @@ export const benefitsData = {
       head: "Aman",
       parag:
         "Anda dilengkapi dengan pelampung, goggle dan sepatu. Crew kami menggunakan jetski khusus akan mendampingi anda selama touring jetski atau watersports lainnya.",
-      icon: <BsPatchCheckFill  className="text-5xl"/>,
+      icon: <BsPatchCheckFill />,
     },
     {
       head: "Personal",
       parag:
         "Anda bisa melakukan permintaan khusus untuk bermain watersports di area lain di Bali atau menentukan rute jetski sesuai keinginan Anda.",
-      icon: <BsFillFilePersonFill className="text-5xl" />,
+      icon: <BsFillFilePersonFill />,
     },
     {
       head: "Lokasi Terbaik",
       parag:
         "Terletak di pantai Mertasari, Sanur, memberikan keuntungan kepada Anda selama bermain watersports dengan lebih nyaman karena tidak seramai lalu lintas air di Tanjung Benoa.",
-      icon: <ImLocation2  className="text-5xl"/>,
+      icon: <ImLocation2 />,
+    },
+  ],
+};
+
+export const pricingData = {
+  headOne: "Pricing",
+  headTwo: "Paket Harga Sewa Jetski Di Bali Amarta Watersports :",
+  prices: [
+    {
+      title: "Sanur - Mangrove",
+      img: pricingOne,
+      price: 2700000,
+      capacity: "Single rider",
+    },
+    {
+      title: "Sanur - Uluwatu",
+      img: pricingTwo,
+      price: 4000000,
+      capacity: "Single rider",
+    },
+    {
+      title: "Sanur - Nusa Penida",
+      img: pricingThree,
+      price: 6000000,
+      capacity: "Single rider",
+    },
+    {
+      title: "Sanur - Candidasa Jimbaran",
+      img: pricingFour,
+      price: 7000000,
+      capacity: "Single rider",
+    },
+  ],
+};
+
+export const testimonyData = {
+  headOne: "Testimonies",
+  headTwo: "Paket Harga Sewa Jetski Di Bali Amarta Watersports :",
+  testimonies: [
+    {
+      name: "Richard Kyle",
+      pic: testimonyOne,
+      headOne: "Amazing",
+      testi:
+        "To another amazing jetski adventure! wet' n wild weekends with Bali Amarta crew!",
+    },
+    {
+      name: "Jesslyn Lim",
+      pic: testimonyTwo,
+      headOne: "Definitely gonna do it again",
+      testi:
+        "This trip is amazing and definitely gonna remember it for the rest of my life and gonna do it over again!",
+    },
+    {
+      name: "Helena Lim",
+      pic: testimonyFour,
+      headOne: "Seru Banget",
+      testi:
+        "Seru banget jetski bareng Bali Amarta! dan takjub melihat keindahan Kelingking beach dan Batu Bolong Nusa Penida dari laut, epic!",
+    },
+    {
+      name: "Marc Simmons",
+      pic: testimonyFive,
+      headOne: "Amazing experience",
+      testi:
+        "This trip is amazing and definitely gonna remember it for the rest of my life and gonna do it over again!",
+    },
+    {
+      name: "Artika Sari Devi & Baim Guitar",
+      pic: testimonyThree,
+      headOne: "Anak-anak saya ketagihan",
+      testi:
+        "Anak-anak ngga bakal lupa pengalaman seru ini, Menaklukkan ombak di atas jetski.",
     },
   ],
 };
