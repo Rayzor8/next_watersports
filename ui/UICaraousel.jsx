@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const CaraouselTesti = ({ children }) => {
+const UICaraousel = ({ children }) => {
   const [width, setWidth] = useState(0);
 
   const carouselRef = useRef();
@@ -28,4 +28,4 @@ const CaraouselTesti = ({ children }) => {
   );
 };
 
-export default CaraouselTesti;
+export default UICaraousel;

@@ -104,7 +104,7 @@ export const pricingData = {
 };
 
 export const testimonyData = {
-  headOne: "Testimonies",
+  headOne: "Testimony",
   headTwo: "Paket Harga Sewa Jetski Di Bali Amarta Watersports :",
   testimonies: [
     {
