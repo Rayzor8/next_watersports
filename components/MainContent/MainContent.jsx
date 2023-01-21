@@ -6,6 +6,8 @@ import Gallery from "./Gallery";
 import Benefits from "./Benefits";
 import Pricing from "./Pricing";
 import Testimony from "./Testimony";
+import FAQuestion from "./FAQuestion";
+import Contacts from "./Contacts";
 
 const MainContent = () => {
   return (
@@ -16,7 +18,9 @@ const MainContent = () => {
       <Gallery />
       <Benefits />
       <Pricing />
+      <FAQuestion/>
       <Testimony />
+      <Contacts/>
     </main>
   );
 };

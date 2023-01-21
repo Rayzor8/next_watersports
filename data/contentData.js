@@ -113,6 +113,7 @@ export const testimonyData = {
       headOne: "Amazing",
       testi:
         "To another amazing jetski adventure! wet' n wild weekends with Bali Amarta crew!",
+      rating: 4.6,
     },
     {
       name: "Jesslyn Lim",
@@ -120,6 +121,7 @@ export const testimonyData = {
       headOne: "Definitely gonna do it again",
       testi:
         "This trip is amazing and definitely gonna remember it for the rest of my life and gonna do it over again!",
+      rating: 4.8,
     },
     {
       name: "Helena Lim",
@@ -127,6 +129,7 @@ export const testimonyData = {
       headOne: "Seru Banget",
       testi:
         "Seru banget jetski bareng Bali Amarta! dan takjub melihat keindahan Kelingking beach dan Batu Bolong Nusa Penida dari laut, epic!",
+      rating: 4.7,
     },
     {
       name: "Marc Simmons",
@@ -134,6 +137,7 @@ export const testimonyData = {
       headOne: "Amazing experience",
       testi:
         "This trip is amazing and definitely gonna remember it for the rest of my life and gonna do it over again!",
+      rating: 4.5,
     },
     {
       name: "Artika Sari Devi & Baim Guitar",
@@ -141,6 +145,33 @@ export const testimonyData = {
       headOne: "Anak-anak saya ketagihan",
       testi:
         "Anak-anak ngga bakal lupa pengalaman seru ini, Menaklukkan ombak di atas jetski.",
+      rating: 4.9,
+    },
+  ],
+};
+
+export const questionData = {
+  headOne: "FAQ",
+  questions: [
+    {
+      question: "Apa itu Rayzor Watersports ?",
+      answer:
+        "Rayzor Watersports adalah perusahaan yang menyewakan Jetski, Jetsurf, Fly Board, Wake Board, Kayak, SUP dan lain lain di Bali crew yang berpengalaman siap menemani Anda menikmati keindahan Pulau Bali dari laut.",
+    },
+    {
+      question: "Apakah ada crew yang membantu?",
+      answer:
+        "Ada, kami memiliki crew yang ramah dan profesional siap membantu Anda dari menyiapkan alat keamanan bermain watersports, memberikan instruksi keamanan bermain watersports hingga mengawasi Anda selama bermain.",
+    },
+    {
+      question: "Berapa harga sewa jetski di Rayzor Watersports?",
+      answer:
+        "Untuk informasi harga sewa lebih detail dan jelas silahkan menghubungi kami di No Hp / Wa. 082132131212",
+    },
+    {
+      question: "Apakah ada asuransi ?",
+      answer:
+        "Ada, harga paket sudah termasuk asuransi jika ada hal hal yang tidak diinginkan.",
     },
   ],
 };

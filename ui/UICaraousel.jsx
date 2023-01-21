@@ -14,7 +14,7 @@ const UICaraousel = ({ children }) => {
 
   return (
     <motion.div
-      className="carousel cursor-grab overflow-hidden"
+      className="carousel"
       ref={carouselRef}
     >
       <motion.div
