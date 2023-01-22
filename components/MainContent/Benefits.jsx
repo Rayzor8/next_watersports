@@ -3,7 +3,7 @@ import { benefitsData } from '../../data/contentData'
 
 const Benefits = () => {
   return (
-    <section className="container mt-12 flex flex-col gap-4 xl:px-0">
+    <section className="container section-box flex flex-col gap-4">
     <h1>{benefitsData.head}</h1>
     <p>{benefitsData.pHead}</p>
 

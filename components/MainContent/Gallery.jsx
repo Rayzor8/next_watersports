@@ -6,7 +6,7 @@ import { galleryData } from "../../data/contentData";
 
 const Gallery = () => {
   return (
-    <section className="container mt-12 flex flex-col gap-4 gradient">
+    <section className="container section-box flex flex-col gap-4 gradient ">
       <h1>{galleryData.head}</h1>
       <p>{galleryData.parags}</p>
 

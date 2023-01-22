@@ -8,7 +8,7 @@ import { TiStar } from "react-icons/ti";
 
 const Testimony = () => {
   return (
-    <section className="container mt-12 flex flex-col gap-4 lg:pl-8 xl:pl-0 gradient">
+    <section className="container section-box flex flex-col gap-4  gradient ">
       <h1>{testimonyData.headOne}</h1>
       <p>{testimonyData.headTwo}</p>
 

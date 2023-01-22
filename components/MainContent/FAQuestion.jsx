@@ -4,7 +4,7 @@ import { questionData } from "../../data/contentData";
 
 const FAQuestion = () => {
   return (
-    <section className="container mt-12 flex flex-col gap-4 lg:pl-0">
+    <section className="container section-box flex flex-col gap-4 ">
       <h1>{questionData.headOne}</h1>
       <Accordion data={questionData.questions} />
     </section>

@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const GreenBtn = ({children}) => {
+const GreenBtn = ({ children }) => {
   return (
-    <button className='btn-contact'>{children}</button>
-  )
-}
+    <button className="btn-contact ">
+      {children}
+    </button>
+  );
+};
 
-export default GreenBtn
+export default GreenBtn;

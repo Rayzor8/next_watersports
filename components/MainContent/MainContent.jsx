@@ -11,7 +11,7 @@ import Contacts from "./Contacts";
 
 const MainContent = () => {
   return (
-    <main className="min-h-screen  py-8 bg-red-400 bg-sky-100 debug-screens overflow-x-hidden">
+    <main className="min-h-screen  py-4 sm:py-8 md:py-10 lg:py-12 bg-red-400 bg-sky-100 debug-screens overflow-x-hidden">
       <Banner />
       <AboutUs />
       <Info />

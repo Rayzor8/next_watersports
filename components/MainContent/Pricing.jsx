@@ -5,7 +5,7 @@ import { formatToRupiah } from "../../utils/formatToRupiah";
 
 const Pricing = () => {
   return (
-    <section className="container mt-12 flex flex-col gap-4 gradient lg:pl-8 xl:pl-0">
+    <section className="container section-box flex flex-col gap-4 gradient">
       <h1>{pricingData.headOne}</h1>
       <p>{pricingData.headTwo}</p>
 

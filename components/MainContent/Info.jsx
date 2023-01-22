@@ -6,7 +6,7 @@ import imgTwo from "../../public/images/img2.jpeg";
 
 const Info = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8 section-box">
     <div>
       <Image
         src={imgTwo}
