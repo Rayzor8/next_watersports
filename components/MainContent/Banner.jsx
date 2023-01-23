@@ -27,7 +27,7 @@ const Banner = () => {
 
         <RenderParagraph parags={bannerData.parags} />
 
-        <GreenBtn>Contact Us</GreenBtn>
+        <GreenBtn to="#contact">Contact Us</GreenBtn>
       </div>
     </section>
   );

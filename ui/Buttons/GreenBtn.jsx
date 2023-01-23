@@ -1,10 +1,11 @@
+import Link from "next/link";
 import React from "react";
 
-const GreenBtn = ({ children }) => {
+const GreenBtn = ({ children, to }) => {
   return (
-    <button className="btn-contact ">
+    <Link className="btn-contact" href={to}>
       {children}
-    </button>
+    </Link>
   );
 };
 
