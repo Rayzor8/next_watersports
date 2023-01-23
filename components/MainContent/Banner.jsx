@@ -7,7 +7,7 @@ import { bannerData } from "../../data/contentData";
 
 const Banner = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8">
+    <section className="container grid grid-cols-1 lg:grid-cols-2 gap-8" id="home">
       <div>
         <Image
           src={bannerOne}

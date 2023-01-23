@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   h1 {
     @apply text-4xl sm:text-4xl lg:text-[2.5rem];
@@ -20,6 +21,11 @@
   }
 }
 
+
+body {
+  @apply overflow-x-hidden w-full;
+}
+
 .accordion-hide {
   @apply opacity-0 h-0 overflow-hidden mt-2  transition-all duration-300 border-t-2 border-t-white;
 }
@@ -28,9 +34,6 @@
   @apply h-max mt-2  transition-all duration-300  border-t-2 border-t-sky-300 pt-2;
 }
 
-body {
-  @apply overflow-x-hidden w-full;
-}
 
 .carousel {
   @apply cursor-grab;

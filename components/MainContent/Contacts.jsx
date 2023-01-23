@@ -7,10 +7,10 @@ import contactImgFour from "../../public/images/contact-4.png";
 
 const Contacts = () => {
   return (
-    <section className="container section-box flex flex-col gap-4 justify-center items-center ">
+    <section className="container section-box flex flex-col gap-4 justify-center items-center" id="contact">
       <h1>Contacts Us</h1>
       <p>Contacts Information here :</p>
-      <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-10/12 2xl:w-1/2 gap-4">
+      <div className="grid  grid-cols-2 md:grid-cols-3 lg:grid-cols-4  2xl:w-1/2 gap-4">
         <a
           className="flex flex-col gap-2 bg-white justify-center items-center p-8 rounded shadow-lg cursor-pointer active:scale-95"
           href="https://www.instagram.com/rayzordev"

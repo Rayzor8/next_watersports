@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import navLogo from "../public/images/logo.jpg";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -17,8 +18,12 @@ const Header = () => {
         </div>
 
         <ul className="flex gap-2  md:text-lg text-midBlue font-semibold">
-          <li className="cursor-pointer">Home</li>
-          <li className="cursor-pointer">Contacts</li>
+          <li className="cursor-pointer">
+            <Link href="#home">Home</Link>
+          </li>
+          <li className="cursor-pointer">
+            <Link href="#contact">Contacts</Link>
+          </li>
         </ul>
       </nav>
     </header>
